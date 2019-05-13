@@ -12,3 +12,7 @@ items that the thief can put in his knapsack.
 ------
 ### REFERENCE
 
+1. declare 2d array with new[]: [link](https://stackoverflow.com/questions/936687/how-do-i-declare-a-2d-array-in-c-using-new)
+2. new and new(): [link](https://stackoverflow.com/questions/7546620/operator-new-initializes-memory-to-zero)
+
+cross using "new" and vector may cause some error
