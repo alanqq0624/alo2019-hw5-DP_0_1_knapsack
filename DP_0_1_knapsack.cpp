@@ -124,24 +124,24 @@ void DP_0_1_knapsack(vector<int> &v, vector<int> &w, int n, int W)
                     c[i][j] = v[i] + c[i-1][j-w[i]];
                     p[i][j].assign( p[i-1][j-w[i]].begin(), p[i-1][j-w[i]].end());
                     p[i][j].push_back(i);
-                    for (int k = 0; k < p[i][j].size(); k++) {
-                        // cout << p[i][j][k];
-                    }
+                    // for (int k = 0; k < p[i][j].size(); k++) {
+                    //     cout << p[i][j][k];
+                    // }
                 } else {
                     // cout << "b\t";
                     c[i][j] = c[i-1][j];
                     p[i][j].assign( p[i-1][j].begin(), p[i-1][j].end());
-                    for (int k = 0; k < p[i][j].size(); k++) {
-                        // cout << p[i][j][k];
-                    }
+                    // for (int k = 0; k < p[i][j].size(); k++) {
+                    //     cout << p[i][j][k];
+                    // }
                 }
             } else {
                 // cout << "c\t";
                 c[i][j] = c[i-1][j];
                 p[i][j].assign( p[i-1][j].begin(), p[i-1][j].end());
-                for (int k = 0; k < p[i][j].size(); k++) {
-                    // cout << p[i][j][k];
-                }
+                // for (int k = 0; k < p[i][j].size(); k++) {
+                //     cout << p[i][j][k];
+                // }
             }
             // cout << "\t";
             // cout << c[i][j] << "\n";
