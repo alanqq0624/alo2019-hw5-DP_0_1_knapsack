@@ -17,7 +17,7 @@ all:
 
 debug:
 	$(PRE)
-	$(CC) -o $(SEKNAPSACKLECT) $(CXXFLAGS) -g $(KNAPSACK).cpp
+	$(CC) -o $(KNAPSACK) $(CXXFLAGS) -g $(KNAPSACK).cpp
 
 debugEXE:
 	$(PRE)
